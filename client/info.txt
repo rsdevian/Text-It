@@ -1,0 +1,7 @@
+npm : {
+    npm create vite@latest
+    tailwindcss,
+    postcss,
+    autoprefixer,
+    npx tailwindcss init -y
+}
