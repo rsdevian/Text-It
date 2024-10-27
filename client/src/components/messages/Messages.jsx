@@ -13,7 +13,7 @@ function Messages() {
         if (!loading) {
       // Add a small timeout to ensure messages are rendered before scroll
       setTimeout(() => {
-        lastMessageRef.current?.scrollIntoView({ behavior: "smooth" });
+        lastMessageRef.current?.scrollIntoView({ behavior: "auto" });
       }, 100);
     }
   }, [messages, loading]);
