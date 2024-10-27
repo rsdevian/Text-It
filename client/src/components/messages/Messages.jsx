@@ -19,7 +19,7 @@ function Messages() {
         {!loading && messages.length === 0 && (
           <p className="text-center">Send a message to start the conversation</p>
         )}
-      <div ref={lastMessage}/>
+      <div ref={lastMessageRef}/>
     </div>
   )
 }
