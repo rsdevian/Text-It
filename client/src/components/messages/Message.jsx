@@ -21,7 +21,7 @@ function Message({message}) {
             </div>
         </div>
         <div className={`chat-bubble text-white ${bubbleBgColor} ${shakeClass}`}>{message.message}</div>
-        <div className='chat-footer opacity-50 text-xs flex gap-1 items-center'>{new Data().toLocaleTimeString()}</div>
+        <div className='chat-footer opacity-50 text-xs flex gap-1 items-center'>{new Date().toLocaleTimeString()}</div>
     </div>
   )
 }
