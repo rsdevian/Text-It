@@ -10,8 +10,13 @@ function Messages() {
     const lastMessageRef = useRef(null);
 
     useEffect(() => {
+        if (!loading) {
+      // Add a small timeout to ensure messages are rendered before scroll
+      setTimeout(() => {
         lastMessageRef.current?.scrollIntoView({ behavior: "smooth" });
-    }, [messages]);
+      }, 100);
+    }
+  }, [messages, loading]);
 
     return (
         <div className="px-4 flex-1 overflow-auto">
