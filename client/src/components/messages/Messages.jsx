@@ -9,7 +9,7 @@ function Messages() {
   const lastMessageRef = useRef(null);
 
   useEffect(() => {
-      lastMessageRef.current?.scrollIntoview({ behavior: "smooth"});
+      lastMessageRef.current?.scrollIntoView({ behavior: "smooth"});
   }, [messages]);
 
   return (
