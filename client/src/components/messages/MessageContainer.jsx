@@ -14,11 +14,11 @@ function MessageContainer() {
   }, [setSelectedConversation])
 
   return (
-    <div className="md:min-w-[450px] flex flex-col">
+    <div className="md:min-w-[450px] flex flex-col" style={{width: "100%"}}>
         {selectedConversation ? (
             <>
                 {/* Header */}
-                <div className="bg-slate-250 px-4 py-2 mb-2" style={{width: "100%"}}>
+                <div className="bg-slate-250 px-4 py-2 mb-2">
                     <span className="flex flex-row items-center gap-2"><img src={selectedConversation.profilePic} alt="user avatar" className="w-12 rounded-full"/><span className="text-gray-900 font-bold"> {selectedConversation.fullName}</span></span>    
                 </div> 
                 <Messages />
